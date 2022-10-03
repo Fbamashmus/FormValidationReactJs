@@ -46,7 +46,7 @@ export default function App() {
 
       if (!values.phone){
           errors.phone="Phone is Required!";
-      }else if(!values.phone.length==10 ){
+      }else if(values.phone.length!=10 ){
         errors.phone="Phone Number should be 10 characters";
       }
 
